@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
 
-    fetch(`http://127.0.0.1:8000/api/pokemon?offset=${offset}`)
+    fetch(`https://pokeapi-conlaravel.onrender.com/api/pokemon?offset=${offset}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Error al obtener los Pokémon')
